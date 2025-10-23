@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "112023799083",
+    "project_id": "parkingapp-aa70d",
+    "storage_bucket": "parkingapp-aa70d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112023799083:android:7ff0cfdb262e70a1b5716e",
+        "android_client_info": {
+          "package_name": "com.example.parking_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZUbV7GPjlfj6buooA5hK96AFmH5rFszQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
