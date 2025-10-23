@@ -37,17 +37,16 @@ class _AddManagerDialogState extends State<AddManagerDialog> {
               : () async {
                   setState(() => isLoading = true);
                   try {
-                    // 1️⃣ Create user in Firebase Auth
+                    
                     final credential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
                       email: emailController.text.trim(),
                       password: passwordController.text.trim(),
                     );
 
-                    // 2️⃣ Create user in Firestore
                     final userModel = UserModel(
                       uid: credential.user!.uid,
                       email: emailController.text.trim(),
-                      role: 'manager', // assign role
+                      role: 'manager',
                     );
 
                     await managersRef.doc(userModel.uid).set(userModel.toMap());

@@ -11,7 +11,6 @@ class ParkingApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => LoginProvider()),
-        // Add other providers like ParkingProvider if needed
       ],
       child: MaterialApp(
         title: 'Parking App',

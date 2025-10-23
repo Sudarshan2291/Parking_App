@@ -57,7 +57,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       if (result != null) {
                         setState(() => error = result);
                       } else {
-                        // Navigate based on role
                         if (loginProvider.user!.email == 'admin@example.com') {
                           Navigator.pushReplacement(
                             context,

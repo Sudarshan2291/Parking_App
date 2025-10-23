@@ -1,6 +1,3 @@
-// ================================
-// Centralized constants
-// ================================
 
 class FirestoreCollections {
   static const String managers = 'managers';

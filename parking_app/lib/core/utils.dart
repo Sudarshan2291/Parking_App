@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// ================================
-/// Simple Validators
-/// ================================
 class Validators {
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) return 'Email required';
@@ -18,9 +15,6 @@ class Validators {
   }
 }
 
-/// ================================
-/// Simple Logger
-/// ================================
 class Logger {
   static void info(String message) {
     debugPrint('ℹ️ INFO: $message');

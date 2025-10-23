@@ -1,7 +1,7 @@
 class ParkingSlot {
-  final String id;          // Firestore document ID
+  final String id;         
   final int slotNumber;
-  final String status;      // 'available' or 'occupied'
+  final String status;      
   final String occupantName;
 
   ParkingSlot({

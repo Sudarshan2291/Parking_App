@@ -6,7 +6,6 @@ import 'firebase_service.dart';
 class FirestoreService {
   final _firestore = FirebaseService().firestore;
 
-  // ------------------ MANAGERS ------------------
 
   Stream<List<UserModel>> streamManagers() {
     return _firestore
@@ -31,7 +30,6 @@ class FirestoreService {
         .delete();
   }
 
-  // ------------------ PARKING SLOTS ------------------
 
   Stream<List<ParkingSlot>> streamParkingSlots() {
     return _firestore

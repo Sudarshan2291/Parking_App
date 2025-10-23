@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       if (result != null) {
                         setState(() => error = result);
                       } else {
-                        // Redirect based on email
+                        
                         if (loginProvider.user!.email!.trim().toLowerCase() == 'admin@gmail.com') {
                           Navigator.pushReplacement(
                             context,

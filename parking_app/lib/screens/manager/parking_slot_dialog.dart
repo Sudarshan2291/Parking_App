@@ -17,14 +17,12 @@ class _ParkingSlotDialogState extends State<ParkingSlotDialog> {
   void updateSlot(String status, [String name = '']) async {
     final slotRef = FirebaseFirestore.instance.collection(FirestoreCollections.parkingSlots);
     if (widget.parkingSlot.id.isEmpty) {
-      // New slot
       await slotRef.add({
         'slotNumber': widget.parkingSlot.slotNumber,
         'status': status,
         'occupantName': name,
       });
     } else {
-      // Update existing
       await slotRef.doc(widget.parkingSlot.id).update({
         'status': status,
         'occupantName': name,
